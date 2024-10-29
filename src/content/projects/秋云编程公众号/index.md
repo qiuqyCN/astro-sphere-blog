@@ -4,11 +4,7 @@ summary: "一个极简的个人博客！"
 date: "Oct 29 2024"
 draft: false
 tags:
-- Astro
-- Javascript
-- Typescript
-- Tailwind
-- SolidJs
+- 微信公众号
 ---
 
 ## 秋云编程公众号简介
