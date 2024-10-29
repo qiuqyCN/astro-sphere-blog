@@ -1,6 +1,6 @@
 ---
 title: "秋云博客"
-summary: "一个极简的个人博客！"
+summary: "一个基于 Astro 的极简个人博客！"
 date: "Oct 29 2024"
 draft: false
 tags:
