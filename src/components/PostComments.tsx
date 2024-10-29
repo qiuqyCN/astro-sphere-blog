@@ -26,23 +26,13 @@ function PostComments() {
     };
 
     // 创建一个代理方法来设置 localStorage 的值
-    const setLocalStorageItem = (key: string, value: string) => {
-        localStorage.setItem(key, value);
-        // 触发自定义事件
-        const customEvent = new CustomEvent('localstorage-theme-change', {
-            detail: { key, newValue: value },
-        });
-        window.dispatchEvent(customEvent);
-    };
-
-    // // 定义一个函数来处理 storage 事件
-    // const handleCustomeEvent = (detail: {
-    //     key: string;
-    //     newValue: string;
-    // }) => {
-    //     // 更新信号中的主题值
-    //     setTheme(detail.newValue as Theme);
-    //     console.log(detail.newValue);
+    // const setLocalStorageItem = (key: string, value: string) => {
+    //     localStorage.setItem(key, value);
+    //     // 触发自定义事件
+    //     const customEvent = new CustomEvent('localstorage-theme-change', {
+    //         detail: { key, newValue: value },
+    //     });
+    //     window.dispatchEvent(customEvent);
     // };
     
       // 监听自定义事件
