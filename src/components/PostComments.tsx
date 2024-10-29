@@ -61,10 +61,10 @@ function PostComments() {
         });
     });
     // 从 .env 配置文件中读取配置
-    const repo = import.meta.env.GISCUS_REPO;
-    const repoId = import.meta.env.GISCUS_REPO_ID;
-    const category = import.meta.env.GISCUS_CATEGORY;
-    const categoryId = import.meta.env.PUBLIC_CATEGORY_ID;
+    const repo = import.meta.env.PUBLIC_GISCUS_REPO;
+    const repoId = import.meta.env.PUBLIC_GISCUS_REPO_ID;
+    const category = import.meta.env.PUBLIC_GISCUS_CATEGORY;
+    const categoryId = import.meta.env.PUBLIC_GISCUS_CATEGORY_ID;
 
     console.log(repo, repoId, category, categoryId)
     return (
