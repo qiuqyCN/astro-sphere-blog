@@ -26,6 +26,12 @@ function changeTheme() {
   window.getComputedStyle(css).opacity
   document.head.removeChild(css)
   localStorage.theme = theme
+
+  // 触发自定义事件
+  const customEvent = new CustomEvent('localstorage-theme-change', {
+    detail: { key: 'theme', newValue: theme },
+  });
+  window.dispatchEvent(customEvent);
 }
 
 function preloadTheme() {
