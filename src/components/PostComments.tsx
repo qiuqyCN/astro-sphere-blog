@@ -65,6 +65,8 @@ function PostComments() {
     const repoId = import.meta.env.GISCUS_REPO_ID;
     const category = import.meta.env.GISCUS_CATEGORY;
     const categoryId = import.meta.env.PUBLIC_CATEGORY_ID;
+
+    console.log(repo, repoId, category, categoryId)
     return (
         <Giscus
           id="comments"
