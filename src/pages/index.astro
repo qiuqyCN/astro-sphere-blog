@@ -3,7 +3,7 @@ import { getCollection } from "astro:content"
 import PageLayout from "@layouts/PageLayout.astro"
 import ArrowCard from "@components/ArrowCard"
 // import StackCard from "@components/StackCard.astro"
-import { SITE, SOCIALS } from "@consts"
+import { SITE, SOCIALS, PROFILE } from "@consts"
 import TwinklingStars from "@components/TwinklingStars.astro"
 import MeteorShower from "@components/MeteorShower.astro"
 
@@ -104,14 +104,14 @@ const projects = (await getCollection("projects"))
           <p class='animated mt-2 text-lg md:text-xl lg:text-2xl font-semibold opacity-75'>
             Hello, I am 
             <span class='animated text-2xl md:text-3xl lg:text-4xl font-bold uppercase text-black dark:text-white'>
-              QiuYun.
+              {PROFILE.NAME}.
             </span>
           </p>
           <!-- <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
             Java开发工程师 &  全栈开发人员 & 极致完美主义者.
           </p>  -->
           <p class='animated text-sm md:text-base lg:text-lg opacity-75'>
-            Java Development Engineer & Full Stack Developer & Ultimate Perfectionist.
+            {PROFILE.DESCRIPTION}
           </p>
           <!-- <div id="ctaButtons" class='animated flex flex-wrap gap-4 justify-center mt-5'>
             <a href='/blog' class='py-2 px-4 rounded truncate text-xs md:text-sm lg:text-base bg-black dark:bg-white text-white dark:text-black hover:opacity-75 blend'>

@@ -1,4 +1,12 @@
-import type { Site, Page, Links, Socials } from "@types"
+import type { Site, Page, Links, Socials, Profile } from "@types"
+
+
+// Profile
+export const PROFILE: Profile = {
+  NAME: "Qiuyun",
+  DESCRIPTION: "Java Development Engineer & Full Stack Developer & Ultimate Perfectionist.",
+}
+
 
 // Global
 export const SITE: Site = {
