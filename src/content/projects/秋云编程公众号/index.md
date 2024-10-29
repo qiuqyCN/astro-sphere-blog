@@ -1,6 +1,6 @@
 ---
-title: "秋云博客"
-summary: "一个极简的个人博客！"
+title: "秋云编程公众号"
+summary: "秋云编程公众号，专注于 Java 后端研发领域，分享 Java 编程经验和技术干货！"
 date: "Oct 29 2024"
 draft: false
 tags:
