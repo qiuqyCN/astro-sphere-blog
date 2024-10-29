@@ -10,6 +10,6 @@ import vercel from "@astrojs/vercel/serverless";
 export default defineConfig({
   site: "https://astro-sphere-demo.vercel.app",
   integrations: [mdx(), sitemap(), solidJs(), tailwind({ applyBaseStyles: false })],
-  // output: "server",
-  // adapter: vercel(),
+  output: "server",
+  adapter: vercel(),
 })
